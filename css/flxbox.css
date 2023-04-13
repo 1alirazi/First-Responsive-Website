@@ -1,0 +1,39 @@
+.container {
+    border: 3px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;  
+    align-items:center;  
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    margin: 2px;
+    flex-basis: 15rem;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+
+.box-one {
+    flex-grow: 1;
+}
+
+.box-two {
+    flex-shrink: 0;
+    flex-grow: 2;
+    flex-basis: 20rem;
+}
+
+.box-three {
+    flex-grow: 1;
+}
+video{
+    width: 400px;
+    height: 400px;
+}

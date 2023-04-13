@@ -1,0 +1,62 @@
+/*******universal class & styles****/
+.container {
+    display: grid;
+    grid-template: 100px auto 100px/ 30fr 70fr;
+    border: 3px solid lightgrey;
+    gap: 7px;
+    height: 100vh;
+    grid-template-areas:
+        "navbar  navbar"
+        "sidebar main"
+        "footer  footer";
+}
+
+.box {
+    background-color: gold;
+}
+
+.box-one {
+    grid-column: 1 / 3;
+    grid-row: 2 / 1;
+}
+
+.box-three {
+    grid-area: main;
+
+}
+
+.box-four {
+    grid-area: footer;
+}
+
+.container-two {
+    display: grid;
+    grid-template: 100px 100px auto / 70fr 30fr;
+    border: 3px solid lightgrey;
+    grid-template-areas:
+        "navbar1 navbar1"
+        "main1    sidebar1"
+        "footer1  footer1"
+    ;
+    height: 100vh;
+}
+
+.box1 {
+    grid-area: navbar1;
+    height: auto;
+}
+
+.box2 {
+    height: auto;
+    grid-area: main1;
+}
+
+.box3 {
+    grid-area: sidebar1;
+}
+
+.box4 {
+    grid-area: footer1;
+    height: 100px;
+
+}
